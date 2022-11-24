@@ -22,7 +22,7 @@ export default function Navigation() {
     <>
       <navbar>
         {directories.map((directory) => (
-          <a>
+          <a className={currentDirectory == directory ? 'selected' : ''}>
             <h3 key={directory}>{directory}</h3>
           </a>
         ))}
