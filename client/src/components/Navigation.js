@@ -5,7 +5,7 @@ import { useDirectory } from '../utils/DirectoryContext';
 // Make our ThemeComponent the default export from this file
 export default function Navigation() {
   // Pluck values from our ThemeContext by invoking our useDirectory hook
-  const { currentDirectory, setCurrentDirectory } = useDirectory();
+  const { currentDirectory, setCurrentDirectory, directories } = useDirectory();
 
   // Object containing CSS gradient for darkTheme and non-darkTheme
   /* const themeStyles = {
@@ -19,20 +19,12 @@ export default function Navigation() {
   }; */
 
   return (
-    <>
-      <h1>Consumers!</h1>
-      <button id="button" onClick={toggleTheme} className="btn" type="button">
-        Toggle dark theme
-      </button>
-      <section className="text-center">
-        The current value of{' '}
-        <code style={{ fontWeight: 'bold' }}>
-          darkTheme: {darkTheme.toString()}
-        </code>
-      </section>
-      <div style={themeStyles}>
-        <h1>Theme Component</h1>
-      </div>
-    </>
+    <navbar>
+      {directories.map((directory) => (
+        <a>
+          <h3 key={directory}>{directory}</h3>
+        </a>
+      ))}
+    </navbar>
   );
 }
