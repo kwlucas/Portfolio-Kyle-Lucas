@@ -17,6 +17,8 @@ export default function DirectoryProvider({ children }) {
     return setDirectory(directory);
   };
 
+  const directories = ['About Me', 'Portfolio', 'Contact', 'Resume'];
+
   // The provider component will wrap all other components inside of it that need access to our global state
   return (
     // Dark theme and toggle theme are getting provided to the child components
