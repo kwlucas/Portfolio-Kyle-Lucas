@@ -19,12 +19,19 @@ export default function Navigation() {
   }; */
 
   return (
-    <navbar>
-      {directories.map((directory) => (
-        <a>
-          <h3 key={directory}>{directory}</h3>
-        </a>
-      ))}
-    </navbar>
+    <>
+      <navbar>
+        {directories.map((directory) => (
+          <a>
+            <h3 key={directory}>{directory}</h3>
+          </a>
+        ))}
+      </navbar>
+      {(currentDirectory == 'About Me') ? (
+        <div></div>
+      ) : (
+        <div></div>
+      )}
+    </>
   );
 }
