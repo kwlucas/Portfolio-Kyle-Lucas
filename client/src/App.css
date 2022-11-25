@@ -67,6 +67,16 @@ header.banner~footer{
   display: none;
 }
 
+div:has(>iframe){
+  text-align: center;
+}
+
+iframe {
+  width: 80%;
+  max-height: 980.4px;
+  height: 162.5vh;
+}
+
 .tab {
   font-weight: normal;
   cursor: pointer;
