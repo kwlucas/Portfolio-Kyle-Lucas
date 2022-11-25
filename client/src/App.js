@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
- 
+import { useDirectory } from './utils/DirectoryContext';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import About from './pages/about';
+import Contact from './pages/contact';
+import Portfolio from './pages/portfolio';
+import Resume from './pages/resume';
+
+
+
 function App() {
+
+  const { currentDirectory } = useDirectory();
+
+  const renderPage = () => {
+    if (currentDirectory === 'About') {
+      return <About />;
+    }
+    if (currentDirectory === 'Portfolio') {
+      return <Portfolio />;
+    }
+    if (currentDirectory === 'Contact') {
+      return <Contact />;
+    }
+    if (currentDirectory === 'Resume') {
+      return <Resume />;
+    }
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      {renderPage()}
+      <Footer />
+    </>
   );
 }
 
