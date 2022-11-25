@@ -9,7 +9,7 @@ export const useDirectory = () => useContext(DirectoryContext);
 // Creating our theme provider. Accepts an argument of "props", here we plucking off the "children" object.
 export default function DirectoryProvider({ children }) {
   // Creating our state
-  const [currentDirectory, setDirectory] = useState('');
+  const [currentDirectory, setDirectory] = useState('Home');
 
   // Method to update our state
   const changeDirectory = (directory) => {
