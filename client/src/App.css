@@ -1,5 +1,47 @@
+* {
+  box-sizing: inherit;
+}
+
 html {
   background-color: #233347;
   color: #f5f5f5;
+  box-sizing: border-box;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  max-height: min-content;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header.banner {
+  display: block;
+  min-height: 100vh;
+}
+
+header.banner>#nameDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+}
+
+header:not(.banner)>#nameDisplay>div{
+  display: none;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0.66rem;
+}
