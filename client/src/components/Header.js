@@ -14,11 +14,11 @@ export default function Header() {
 
   return (
       <header className={currentDirectory === 'Home'? 'banner': 'navbar'}>
-        <div >
+        <div id='nameDisplay'>
           <h1 onClick={nameClick}>Kyle Lucas</h1>
           <div>Web Developer</div>
         </div>
-        <Navigation />
+        {currentDirectory === 'Home'? <nav><Navigation /></nav>: <Navigation />}
       </header>
   );
 }
