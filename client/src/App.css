@@ -45,3 +45,12 @@ nav {
   justify-content: space-evenly;
   padding: 0.66rem;
 }
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header.banner~footer{
+  display: none;
+}
