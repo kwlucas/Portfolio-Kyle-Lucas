@@ -46,6 +46,10 @@ nav {
   padding: 0.66rem;
 }
 
+main {
+  padding: 0.66rem;
+}
+
 footer{
   display: flex;
   justify-content: space-evenly;
