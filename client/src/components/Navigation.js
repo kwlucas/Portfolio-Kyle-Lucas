@@ -10,7 +10,7 @@ export default function Navigation() {
   return (
     <>
       {directories.map((directory) => (
-        <div key={directory} className={currentDirectory == directory ? 'tab selected' : 'tab'} onClick={() => changeDirectory(`${directory}`)}>
+        <div key={directory} className={currentDirectory === directory ? 'tab selected' : 'tab'} onClick={() => changeDirectory(`${directory}`)}>
           {directory}
         </div>
       ))}
