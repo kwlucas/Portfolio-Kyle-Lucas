@@ -50,6 +50,10 @@ main {
   padding: 0.66rem;
 }
 
+main>*:not(:last-child) {
+  margin-bottom: 0.33rem;
+}
+
 footer{
   display: flex;
   justify-content: space-evenly;
