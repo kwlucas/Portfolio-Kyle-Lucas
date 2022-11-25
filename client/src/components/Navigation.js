@@ -11,7 +11,7 @@ export default function Navigation() {
     <>
       <navbar>
         {directories.map((directory) => (
-          <div key={directory} className={currentDirectory == directory ? 'tab selected' : 'tab'}>
+          <div key={directory} className={currentDirectory == directory ? 'tab selected' : 'tab'} onClick={() => setCurrentDirectory(`${directory}`)}>
             {directory}
           </div>
         ))}
