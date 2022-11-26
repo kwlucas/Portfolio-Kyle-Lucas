@@ -38,12 +38,12 @@ export default function Header() {
   const handleMouseEnter = async (event) => {
     //console.log('Mouse Enter Tile');
     const index = [...event.target.parentElement.children].indexOf(event.target);
-    let columns = Math.floor(size.width / 50);
-    let rows = Math.floor(size.height / 50);
+    let columns = Math.floor(size.width / 30);
+    let rows = Math.floor(size.height / 30);
     console.log(waveCount % (colors.length));
     anime.timeline({
       targets: '.tile',
-      delay: anime.stagger(50, {
+      delay: anime.stagger(30, {
         grid: [columns, rows],
         from: index
       })
@@ -54,8 +54,8 @@ export default function Header() {
   }
 
   function calculateTiles() {
-    let columns = Math.floor(size.width / 50);
-    let rows = Math.floor(size.height / 50);
+    let columns = Math.floor(size.width / 30);
+    let rows = Math.floor(size.height / 30);
     document.documentElement.style.setProperty('--columns', columns);
     document.documentElement.style.setProperty('--rows', rows);
     return rows * columns;
