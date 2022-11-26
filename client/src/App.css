@@ -8,12 +8,14 @@ html {
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --rows: 1;
   --columns: 1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -46,7 +48,7 @@ header.banner>#nameDisplay {
   cursor: pointer;
 }
 
-header:not(.banner)>#nameDisplay>div{
+header:not(.banner)>#nameDisplay>div {
   display: none;
 }
 
@@ -60,7 +62,7 @@ header:not(.banner)>#nameDisplay>div{
   /* z-index: 1; */
 }
 
-.tile{
+.tile {
   height: 100%;
   max-height: 30.2px;
   width: 100%;
@@ -88,16 +90,16 @@ main>*:not(:last-child) {
   margin-bottom: 0.33rem;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: space-evenly;
 }
 
-header.banner~footer{
+header.banner~footer {
   display: none;
 }
 
-div:has(>iframe){
+div:has(>iframe) {
   text-align: center;
 }
 
@@ -122,8 +124,13 @@ iframe {
   padding: 0.33rem;
 }
 
-.container>*{
+.container>* {
   flex: 1 1 0;
+}
+
+.container>img {
+  max-width: 30rem;
+  padding: 10px;
 }
 
 .cardContainer {
