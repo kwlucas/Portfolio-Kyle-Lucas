@@ -6,7 +6,7 @@ export default function About() {
         <main>
             <h2>About Me</h2>
             <div className='container'>
-                <p>Text goes here</p>
+                <p>I've got a passion for programming. I pick up things quick and am always ready to take on something new.</p>
                 <img alt='Kyle Lucas'></img>
             </div>
         </main>
