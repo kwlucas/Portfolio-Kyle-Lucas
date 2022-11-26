@@ -47,7 +47,7 @@ export default function Header() {
         from: index
       })
     }).add({
-      backgroundColor: colors[waveCount % (colors.length - 1)],
+      backgroundColor: colors[waveCount % (colors.length)],
     })
     setWaveCount(waveCount + 1);
   }
