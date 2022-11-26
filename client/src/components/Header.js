@@ -14,9 +14,10 @@ export default function Header() {
 
 
   const colors = [
-    "rgb(42, 51, 84, 1.0)",
+    // "rgb(42, 51, 84, 1.0)",
+    "rgb(35, 51, 71, 1.0)",
     "rgb(42, 51, 84, 0.0)",
-    "rgb(35, 51, 71, 0.0)"
+    // "rgb(35, 51, 71, 1.0)"
   ]
 
   const handleResize = () => {
