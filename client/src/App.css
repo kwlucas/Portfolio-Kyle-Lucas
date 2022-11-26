@@ -93,6 +93,9 @@ main>*:not(:last-child) {
 footer {
   display: flex;
   justify-content: space-evenly;
+  /* position: absolute; */
+  bottom: 0px;
+  width: 100%;
 }
 
 header.banner~footer {
