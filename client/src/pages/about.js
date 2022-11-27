@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutImage from '../images/kyleImage01.jpg';
 
 export default function About() {
 
@@ -6,8 +7,8 @@ export default function About() {
         <main>
             <h2>About Me</h2>
             <div className='container'>
-                <p>Text goes here</p>
-                <img alt='Kyle Lucas'></img>
+                <p>I've got a passion for programming. I pick up things quick and am always ready to take on something new.</p>
+                <img src={aboutImage} alt='Kyle Lucas'></img>
             </div>
         </main>
     );

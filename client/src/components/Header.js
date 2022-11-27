@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React/* , { useEffect, useState } */ from 'react';
 import { useDirectory } from '../utils/DirectoryContext';
 import Navigation from './Navigation';
 import anime from 'animejs';
@@ -6,7 +6,7 @@ import anime from 'animejs';
 export default function Header() {
 
   const { currentDirectory, changeDirectory } = useDirectory();
-  const [size, setSize] = useState({
+  /* const [size, setSize] = useState({
     width: document.body.clientWidth,
     height: document.body.clientHeight
   });
@@ -28,8 +28,7 @@ export default function Header() {
     calculateTiles();
   }
   useEffect(() => {
-    console.log('Used Effect');
-    //document.querySelector('#bannerGrid').addEventListener('mouseover', handleMouseEnter)
+    //console.log('Used Effect');
     handleResize();
   }, []);
 
@@ -63,7 +62,7 @@ export default function Header() {
 
   const createTiles = Array.from({ length: calculateTiles() }, (_, index) => {
     return <div key={index} className='tile' onClick={handleMouseEnter}></div>;
-  });
+  }); */
 
   function nameClick() {
     if (currentDirectory !== 'Home') {
@@ -73,7 +72,7 @@ export default function Header() {
 
   return (
     <header className={currentDirectory === 'Home' ? 'banner' : 'navbar'}>
-      {currentDirectory === 'Home' ? <div id='bannerGrid'>{createTiles}</div> : <></>}
+      {/* currentDirectory === 'Home' ? <div id='bannerGrid'>{createTiles}</div> : <></> */}
       <div id='nameDisplay'>
         <h1 onClick={nameClick}>Kyle Lucas</h1>
         <div>Web Developer</div>
