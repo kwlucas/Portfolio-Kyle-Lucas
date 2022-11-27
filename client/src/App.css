@@ -25,6 +25,7 @@ header {
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
+  min-height: 60px;
 }
 
 header.banner {
@@ -42,6 +43,7 @@ header.banner>#nameDisplay {
   min-height: 75vh;
   height: 100%;
   pointer-events: none;
+  font-size: xx-large;
 }
 
 #nameDisplay {
