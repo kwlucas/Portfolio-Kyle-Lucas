@@ -9,16 +9,17 @@ export default function Contact() {
         <fieldset>
           <div>
             <label htmlFor='nameInput'>Name</label>
-            <input id='nameInput' placeholder='Name' type='text'></input>
+            <input id='nameInput' placeholder='Name' type='text' required></input>
           </div>
           <div>
             <label htmlFor='emailInput'>Email</label>
-            <input id='emailInput' placeholder='Email' type='email'></input>
+            <input id='emailInput' placeholder='Email' type='email' required></input>
           </div>
         </fieldset>
         <fieldset>
-          <textarea id='messageInput' placeholder='Message'></textarea>
+          <textarea id='messageInput' placeholder='Message' required></textarea>
         </fieldset>
+        <button type='submit'>Send</button>
       </form>
     </main>
   );
