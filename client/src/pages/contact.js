@@ -19,7 +19,9 @@ export default function Contact() {
         <fieldset>
           <textarea id='messageInput' placeholder='Message' required></textarea>
         </fieldset>
-        <button type='submit'>Send</button>
+        <div className='buttonGroup'>
+          <button type='submit'>Send</button>
+        </div>
       </form>
     </main>
   );
