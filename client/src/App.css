@@ -114,6 +114,7 @@ fieldset {
   border: none;
   width: 100%;
   display: flex;
+  padding-block-end: 0.325em;
 }
 
 fieldset>* {
@@ -143,6 +144,24 @@ fieldset textarea {
   font-family: inherit;
   min-height: 50px;
   height: 50vh;
+}
+
+form>div.buttonGroup{
+  width: 100%;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+}
+
+form div>button {
+  border-radius: 5px;
+  padding: 0.33rem;
+  width: 100%;
+}
+
+form button[type=submit]{
+  background-color: #3FFC7B;
 }
 
 iframe {
