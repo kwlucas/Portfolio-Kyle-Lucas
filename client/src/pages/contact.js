@@ -8,16 +8,16 @@ export default function Contact() {
       <form>
         <fieldset>
           <div>
-            <label for='nameInput'>Name</label>
+            <label htmlFor='nameInput'>Name</label>
             <input id='nameInput' placeholder='Name' type='text'></input>
           </div>
           <div>
-            <label for='emailInput'>Email</label>
+            <label htmlFor='emailInput'>Email</label>
             <input id='emailInput' placeholder='Email' type='email'></input>
           </div>
         </fieldset>
         <fieldset>
-          <textarea id='messageInput' placeholder='Message' rows='20'></textarea>
+          <textarea id='messageInput' placeholder='Message'></textarea>
         </fieldset>
       </form>
     </main>
