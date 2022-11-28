@@ -6,10 +6,10 @@ export default function Footer() {
     return (
         <footer>
             <div>
-                <object data={githubIcon} width='60em'></object>
+                <img src={githubIcon} width='60em'></img>
             </div>
             <div>
-                <object data={linkedinIcon} width='60em'></object>
+                <img src={linkedinIcon} width='60em'></img>
             </div>
             <div>
                 <i>Icon</i>
