@@ -105,6 +105,14 @@ footer>a:not(:last-child){
   margin-right: 2rem;
 }
 
+footer>a {
+  transition: filter 300ms ease-in-out;
+}
+
+footer>a:hover {
+  filter: brightness(150%);
+}
+
 header.banner~footer {
   display: none;
 }
