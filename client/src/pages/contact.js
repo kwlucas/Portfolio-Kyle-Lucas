@@ -7,10 +7,18 @@ export default function Contact() {
       <h2>Contact</h2>
       <form>
         <fieldset>
-          <input id='nameInput' placeholder='Name'></input>
-          <input id='emailInput' placeholder='Email'></input>
+          <div>
+            <label for='nameInput'>Name</label>
+            <input id='nameInput' placeholder='Name' type='text'></input>
+          </div>
+          <div>
+            <label for='emailInput'>Email</label>
+            <input id='emailInput' placeholder='Email' type='email'></input>
+          </div>
         </fieldset>
-        <textarea id='messageInput' placeholder='Message'></textarea>
+        <fieldset>
+          <textarea id='messageInput' placeholder='Message' rows='20'></textarea>
+        </fieldset>
       </form>
     </main>
   );
