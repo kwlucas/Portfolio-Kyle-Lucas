@@ -7,8 +7,8 @@ export default function About() {
         <main>
             <h2>About Me</h2>
             <div className='container'>
-                <p>I've got a passion for programming. I pick up things quick and am always ready to take on something new.</p>
                 <img src={aboutImage} alt='Kyle Lucas'></img>
+                <p>I've got a passion for programming. I pick up things quick and am always ready to take on something new.</p>
             </div>
         </main>
     );
