@@ -229,6 +229,12 @@ button {
   height: 270px;
   width: 300px;
   cursor: pointer;
+  padding: 2.33rem 2.33rem;
+}
+
+.cardTitle {
+  font-size: 1.5em;
+  margin-bottom: 0.33rem;
 }
 
 @media (min-width: 426px) {
