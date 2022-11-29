@@ -207,17 +207,12 @@ button {
 }
 
 .container {
-  display: flex;
-  /* border: 1px solid #f5f5f5; */
   padding: 0.33rem;
-}
-
-.container>* {
-  flex: 1 1 0;
 }
 
 .container>img {
   max-width: 30rem;
+  width: 100%;
   padding: 10px;
 }
 
@@ -244,5 +239,13 @@ button {
   .navbar h1 {
     font-size: 30px;
     width: fit-content;
+  }
+
+  .container{
+    display: flex;
+  }
+
+  .container>* {
+    flex: 1 1 0;
   }
 }
