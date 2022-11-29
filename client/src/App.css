@@ -83,6 +83,10 @@ nav {
   /* z-index: 2; */
 }
 
+.navbar, .banner>nav {
+  background-color: #192533;
+}
+
 .navbar #nameDisplay {
   text-align: center;
 }
@@ -224,17 +228,63 @@ button {
 }
 
 .card {
-  background-color: #37506f;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
   border-radius: 12px;
   height: 270px;
   width: 300px;
   cursor: pointer;
-  padding: 2.33rem 2.33rem;
 }
 
-.cardTitle {
+.card::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: inherit;
+  position: absolute;
+  z-index: 3;
+  background: radial-gradient(775px circle at var(--mouseX) var(--mouseY), rgba(255, 255, 255, 0.06), transparent 40%);
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.card:hover::before,
+.card:hover>.border {
+  opacity: 1;
+}
+
+.card>.content {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  position: relative;
+  padding: 2.33rem 2.33rem;
+  margin: 1px;
+  border-radius: inherit;
+  /* background-color: rgb(56, 81, 112); */
+  background-color: rgba(46 61 80);
+  z-index: 2;
+
+}
+
+.card .title {
   font-size: 1.5em;
   margin-bottom: 0.33rem;
+}
+
+.card>.border {
+  /* width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: inherit;
+  position: absolute; */
+  z-index: 1;
+  background: radial-gradient(387.5px circle at var(--mouseX) var(--mouseY), rgba(255, 255, 255, 0.3), transparent 40%);
+  opacity: 0; 
+  transition: opacity 500ms;
 }
 
 @media (min-width: 426px) {
