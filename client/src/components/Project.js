@@ -3,12 +3,12 @@ import React from 'react';
 export default function Project(props) {
     const { name, description, repo, deployment, imagePath } = props.projectData
     return (
-        <>
-            <div className='card'>
-                <div className='cardTitle'>{name}</div>
-                <div className='cardBody' >{description}</div>
+        <div className='card' onMouseMove={props.eventHandler}>
+            <div className='content'>
+                <div className='title'>{name}</div>
+                <div className='body' >{description}</div>
             </div>
-            <div className='cardBorder'></div>
-        </>
+            <div className='border'></div>
+        </div>
     );
 }
