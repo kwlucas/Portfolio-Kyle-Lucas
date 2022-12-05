@@ -229,12 +229,15 @@ button {
 
 .card {
   position: relative;
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.1);
   /* border: 1px solid rgba(255, 255, 255, 0.1); */
   border-radius: 12px;
   height: 270px;
   width: 300px;
   cursor: pointer;
+  --mouseX: 0;
+  --mouseY: 0;
 }
 
 .card::before{
@@ -251,14 +254,13 @@ button {
   transition: opacity 500ms;
 }
 
-.card:hover::before,
-.card:hover>.border {
+.card:hover::before {
   opacity: 1;
 }
 
 .card>.content {
-  width: calc(100% - 2px);
-  height: calc(100% - 2px);
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
   position: relative;
   padding: 2.33rem 2.33rem;
   margin: 1px;
@@ -285,6 +287,10 @@ button {
   background: radial-gradient(387.5px circle at var(--mouseX) var(--mouseY), rgba(255, 255, 255, 0.3), transparent 40%);
   opacity: 0; 
   transition: opacity 500ms;
+}
+
+.cardContainer:hover .border {
+  opacity: 1;
 }
 
 @media (min-width: 426px) {
