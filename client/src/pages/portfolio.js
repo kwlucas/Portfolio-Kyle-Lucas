@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Project from '../components/Project';
 
@@ -27,11 +27,32 @@ const projects = [
 ]
 
 export default function Portfolio() {
+    const [mousePos, setMousePos] = useState({
+        X: 0,
+        Y: 0
+    });
+
+    useEffect(() => {
+        (document.querySelectorAll('.card') || []).forEach(card => {
+            const rect = card.getBoundingClientRect();
+            card.style.setProperty('--mouseX', `${mousePos.X - rect.left}px`);
+            card.style.setProperty('--mouseY', `${mousePos.Y - rect.top}px`);
+
+        });
+    })
+
+    function handleMouseMove(event) {
+        console.log('move');
+        setMousePos({
+            X: event.clientX,
+            Y: event.clientY
+        });
+    }
 
     return (
         <main>
             <h2>Portfolio</h2>
-            <div className='cardContainer'>
+            <div className='cardContainer' onMouseMove={handleMouseMove}>
                 {projects.map((project, index) => (
                     <Project key={index} projectData={project} />
                 ))}
