@@ -4,11 +4,11 @@ import Project from '../components/Project';
 
 const projects = [
     {
-        name: 'Project 1',
-        description: 'Awsome description of project.',
-        repo: 'linkToRepo.com',
-        deployment: 'linkToDeployment.com',
-        imagePath: 'path/to/image'
+        name: 'Code Clips',
+        description: 'Code Clips is a web app for developers that allows one to store bits of code, documentation, and references online for future use.',
+        repo: 'https://github.com/kwlucas/Code-Clips',
+        deployment: 'https://code-clips.herokuapp.com/',
+        imagePath: 'https://github.com/kwlucas/Code-Clips/raw/main/public/images/CodeClips-Image.PNG'
     },
     {
         name: 'Project 2',
@@ -42,7 +42,6 @@ export default function Portfolio() {
     })
 
     function handleMouseMove(event) {
-        console.log('move');
         setMousePos({
             X: event.clientX,
             Y: event.clientY
