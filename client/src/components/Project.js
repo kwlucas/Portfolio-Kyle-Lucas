@@ -8,7 +8,6 @@ export default function Project(props) {
                 <div className='title'>{name}</div>
                 <div className='body' >{description}</div>
             </div>
-            <div className='border'></div>
         </div>
     );
 }
