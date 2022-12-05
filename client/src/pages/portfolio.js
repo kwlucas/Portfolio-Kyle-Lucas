@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Project from '../components/Project';
 
@@ -32,26 +32,29 @@ export default function Portfolio() {
         Y: 0
     });
 
-    const handleMouseMove = (event) => {
-        const target = event.target
-        const rect = target.getBoundingClientRect()
-        const posX = event.clientX - rect.left;
-        const posY = event.clientY - rect.top;
-        setMousePos({
-            X: posX,
-            Y: posY
-        })
+    useEffect(() => {
+        (document.querySelectorAll('.card') || []).forEach(card => {
+            const rect = card.getBoundingClientRect();
+            card.style.setProperty('--mouseX', `${mousePos.X - rect.left}px`);
+            card.style.setProperty('--mouseY', `${mousePos.Y - rect.top}px`);
 
-        target.style.setProperty('--mouseX', `${mousePos.X}px`);
-        target.style.setProperty('--mouseY', `${mousePos.Y}px`);
+        });
+    })
+
+    function handleMouseMove(event) {
+        console.log('move');
+        setMousePos({
+            X: event.clientX,
+            Y: event.clientY
+        });
     }
 
     return (
         <main>
             <h2>Portfolio</h2>
-            <div className='cardContainer'>
+            <div className='cardContainer' onMouseMove={handleMouseMove}>
                 {projects.map((project, index) => (
-                    <Project key={index} eventHandler={handleMouseMove} projectData={project} />
+                    <Project key={index} projectData={project} />
                 ))}
             </div>
         </main>
