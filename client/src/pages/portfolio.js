@@ -11,8 +11,8 @@ const projects = [
         imagePath: 'https://github.com/kwlucas/Code-Clips/raw/main/public/images/CodeClips-Image.PNG'
     },
     {
-        name: 'Project 2',
-        description: 'Awsome description of project.',
+        name: 'Statblock',
+        description: 'A tool used to help create characters for use in D&D (Dungeons and Dragon)',
         repo: 'linkToRepo.com',
         deployment: 'linkToDeployment.com',
         imagePath: 'path/to/image'
