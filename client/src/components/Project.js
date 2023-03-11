@@ -15,7 +15,10 @@ export default function Project(props) {
             <div className='card' onClick={handleClick}>
                 <div className='content'>
                     <div className='title'>{name}</div>
-                    <div className='body' >{description}</div>
+                    <div className='body'>
+                    <img className='cover' src={imagePath}></img>
+                        <p>{description}</p>
+                    </div>
                 </div>
             </div>
             <dialog onClick={handleClick} open={status}>
