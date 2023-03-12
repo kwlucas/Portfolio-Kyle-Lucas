@@ -1,11 +1,13 @@
 import React/* , { useEffect, useState } */ from 'react';
-import { useDirectory } from '../utils/DirectoryContext';
+// import { useDirectory } from '../utils/DirectoryContext';
+import { useLocation, NavLink } from 'react-router-dom';
 import Navigation from './Navigation';
-import anime from 'animejs';
+// import anime from 'animejs';
 
 export default function Header() {
 
-  const { currentDirectory, changeDirectory } = useDirectory();
+  // const { currentDirectory, changeDirectory } = useDirectory();
+  const currentDirectory = useLocation().pathname;
   /* const [size, setSize] = useState({
     width: document.body.clientWidth,
     height: document.body.clientHeight
@@ -64,20 +66,20 @@ export default function Header() {
     return <div key={index} className='tile' onClick={handleMouseEnter}></div>;
   }); */
 
-  function nameClick() {
-    if (currentDirectory !== 'Home') {
-      changeDirectory('Home');
-    }
-  }
+  // function nameClick() {
+  //   if (currentDirectory !== 'Home') {
+  //     changeDirectory('Home');
+  //   }
+  // }
 
   return (
-    <header className={currentDirectory === 'Home' ? 'banner' : 'navbar'}>
+    <header className={currentDirectory === '/' ? 'banner' : 'navbar'}>
       {/* currentDirectory === 'Home' ? <div id='bannerGrid'>{createTiles}</div> : <></> */}
       <div id='nameDisplay'>
-        <h1 onClick={nameClick}>Kyle Lucas</h1>
+        <h1><NavLink to='/'>Kyle Lucas</NavLink></h1>
         <div>Web Developer</div>
       </div>
-      {currentDirectory === 'Home' ? <nav><Navigation /></nav> : <Navigation />}
+      {currentDirectory === '/' ? <nav><Navigation /></nav> : <Navigation />}
     </header>
   );
 }
