@@ -17,6 +17,8 @@ export default function Project(props) {
         setStatus(false);
     }
 
+    //WHY WONT THE MODALS CLOSE ON MOBILE?!?!?!?!?!
+
     return (
         <>
             <div className='card' onClick={handleClick}>
