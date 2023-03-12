@@ -206,8 +206,13 @@ button {
   cursor: pointer;
 }
 
-.tab.selected {
-  font-weight: bold;
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.tab .active {
+  font-weight: 1000;
 }
 
 .container {
@@ -215,9 +220,20 @@ button {
 }
 
 .container>img {
-  max-width: 30rem;
+  /* max-width: 30rem; */
+  /* max-height: 20rem; */
   width: 100%;
   padding: 10px;
+}
+
+.container>img+p {
+  max-height: 20rem;
+  min-width: 24rem;
+}
+
+.about.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cardContainer {
@@ -341,6 +357,30 @@ button {
   transition: opacity 500ms;
 }
 
+.card ul.techList{
+  text-align: center;
+  padding: 0;
+  filter: opacity(0%);
+  transition: all 0.75s;
+}
+
+.card:hover ul.techList{
+  filter: opacity(100%);
+}
+
+.card ul.techList>li{
+  display: inline;
+  padding: 0.25rem;
+}
+
+ul.techList>li:not(:last-child):after{
+  content: '*';
+  position: relative;
+  top: 3px;
+  left: 2%;
+  z-index: inherit;
+}
+
 .cardContainer:hover .card::after {
   opacity: 1;
 }
@@ -356,7 +396,7 @@ dialog{
   top: 0;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.3);
-  padding: 10%;
+  padding: 7%;
   overflow: hidden;
 }
 
@@ -396,10 +436,22 @@ dialog .header a:hover {
 dialog .body {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 dialog .body>* {
+  /* flex: 1 1 0; */
+  padding: 0.33rem;
+  margin: 0;
+}
+
+dialog .body.techLists>* {
   flex: 1 1 0;
+}
+
+dialog .body:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 dialog .body img {
@@ -420,8 +472,14 @@ dialog .body img {
   .container{
     display: flex;
   }
-
   .container>* {
     flex: 1 1 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container>img {
+    max-width: 30rem;
+    /* max-height: 20rem; */
   }
 }
