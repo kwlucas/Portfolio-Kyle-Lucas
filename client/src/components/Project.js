@@ -6,12 +6,14 @@ export default function Project(props) {
     const [status, setStatus] = useState(false)
     const { name, description, infoSegments, frontEndTech, backEndTech, mainTech, repo, deployment, imagePath, mediaPaths } = props.projectData
 
-    function handleClick() {
+    function handleClick(event) {
         //status ? setStatus(false) : setStatus(true);
+        event.stopPropagation()
         setStatus(!status);
     }
 
-    function handleClose(){
+    function handleClose(event){
+        event.stopPropagation()
         setStatus(false);
     }
 
