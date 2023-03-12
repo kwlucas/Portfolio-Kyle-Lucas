@@ -7,7 +7,8 @@ export default function Project(props) {
     const { name, description, infoSegments, frontEndTech, backEndTech, mainTech, repo, deployment, imagePath, mediaPaths } = props.projectData
 
     function handleClick() {
-        status ? setStatus(false) : setStatus(true);
+        //status ? setStatus(false) : setStatus(true);
+        setStatus(!status);
     }
 
     return (
