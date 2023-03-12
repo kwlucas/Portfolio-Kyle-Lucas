@@ -6,10 +6,15 @@ export default function Project(props) {
     const [status, setStatus] = useState(false)
     const { name, description, infoSegments, frontEndTech, backEndTech, mainTech, repo, deployment, imagePath, mediaPaths } = props.projectData
 
-    function handleClick(event) {
-        //status ? setStatus(false) : setStatus(true);
+    // function handleClick(event) {
+    //     //status ? setStatus(false) : setStatus(true);
+    //     event.stopPropagation()
+    //     setStatus(!status);
+    // }
+
+    function handleOpen(event){
         event.stopPropagation()
-        setStatus(!status);
+        setStatus(true);
     }
 
     function handleClose(event){
@@ -21,7 +26,7 @@ export default function Project(props) {
 
     return (
         <>
-            <div className='card' onClick={handleClick}>
+            <div className='card' onClick={handleOpen}>
                 <div className='content'>
                     <div className='title'>{name}</div>
                     <div className='body'>
@@ -35,7 +40,7 @@ export default function Project(props) {
                     </ul>
                 </div>
             </div>
-            <dialog onClick={handleClick} open={status}>
+            <dialog onClick={handleClose} open={status}>
                 <div className='content'>
                     <div onClick={handleClose} className='closeBtn'>x</div>
                     <div className='header'>
