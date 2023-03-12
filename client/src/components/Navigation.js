@@ -15,7 +15,7 @@ export default function Navigation() {
     <>
       {directories.map((directory, index) => (
         <div key={index} className='tab'>
-          <NavLink to={`/${directory}`}>{directory}</NavLink>
+          <NavLink to={`/Portfolio-Kyle-Lucas/${directory}`}>{directory}</NavLink>
         </div>
       ))}
     </>
