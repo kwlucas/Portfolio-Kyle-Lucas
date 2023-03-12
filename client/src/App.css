@@ -220,7 +220,7 @@ a{
 }
 
 .container>img {
-  /* max-width: 30rem; */
+  max-width: 40rem;
   /* max-height: 20rem; */
   width: 100%;
   padding: 10px;

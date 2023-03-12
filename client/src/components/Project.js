@@ -3,22 +3,22 @@ import React, { useState } from 'react';
 import githubIcon from '../images/github.svg';
 
 export default function Project(props) {
-    const [status, setStatus] = useState(false)
+    const [status, setStatus] = useState(false);
     const { name, description, infoSegments, frontEndTech, backEndTech, mainTech, repo, deployment, imagePath, mediaPaths } = props.projectData
 
-    // function handleClick(event) {
-    //     //status ? setStatus(false) : setStatus(true);
-    //     event.stopPropagation()
-    //     setStatus(!status);
-    // }
+    /* function handleClick(event) {
+        //status ? setStatus(false) : setStatus(true);
+        event.stopPropagation()
+        setStatus(!status);
+    } */
 
     function handleOpen(event){
-        event.stopPropagation()
+        event.stopPropagation();
         setStatus(true);
     }
 
     function handleClose(event){
-        event.stopPropagation()
+        event.stopPropagation();
         setStatus(false);
     }
 
