@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../media/KyleLucasResume.pdf';
+import resume from '../media/Kyle_Lucas_Resume2023.pdf';
 
 export default function Resume() {
 

@@ -25,7 +25,7 @@ export default function Contact() {
 
   return (
     <main>
-      <h2>Contact</h2>
+      <h2>Contact - Note: Is not operational at the moment. Please, see my contact info on my resume.</h2>
       <form onSubmit={handleSubmit}>
         <fieldset>
           <div>
