@@ -29,6 +29,7 @@ export default function Project(props) {
             </div>
             <dialog onClick={handleClick} open={status}>
                 <div className='content'>
+                    <div onClick={handleClick} className='closeBtn'>x</div>
                     <div className='header'>
                         <a href={deployment} target='_blank' rel='external'>{name}</a>
                         <a href={repo} target='_blank' rel='external'>
