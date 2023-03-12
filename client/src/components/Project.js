@@ -40,7 +40,7 @@ export default function Project(props) {
                     </ul>
                 </div>
             </div>
-            <dialog onClick={handleClose} open={status}>
+            {status && <dialog onClick={handleClose} open={status}>
                 <div className='content'>
                     <div onClick={handleClose} className='closeBtn'>x</div>
                     <div className='header'>
@@ -86,7 +86,7 @@ export default function Project(props) {
                         </div> : <></>}
                     </div>:<></>}
                 </div>
-            </dialog>
+            </dialog> }
         </>
     );
 }
