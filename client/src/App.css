@@ -459,6 +459,16 @@ dialog .body img {
   min-width: 220px;
 }
 
+.closeBtn {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  filter: opacity(90%);
+}
+
 @media (min-width: 426px) {
   header.banner>#nameDisplay {
     font-size: xx-large;
