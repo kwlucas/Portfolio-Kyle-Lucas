@@ -4,7 +4,7 @@ import githubIcon from '../images/github.svg';
 
 export default function Project(props) {
     const [status, setStatus] = useState(false)
-    const { name, description, repo, deployment, imagePath } = props.projectData
+    const { name, description, infoSegments, frontEndTech, backEndTech, mainTech, repo, deployment, imagePath, mediaPaths } = props.projectData
 
     function handleClick() {
         status ? setStatus(false) : setStatus(true);
@@ -16,9 +16,14 @@ export default function Project(props) {
                 <div className='content'>
                     <div className='title'>{name}</div>
                     <div className='body'>
-                    <img className='cover' src={imagePath}></img>
+                        <img className='cover' src={imagePath}></img>
                         <p>{description}</p>
                     </div>
+                    <ul className='techList'>
+                        {mainTech.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
                 </div>
             </div>
             <dialog onClick={handleClick} open={status}>
@@ -35,6 +40,36 @@ export default function Project(props) {
                             <img src={imagePath}></img>
                         </div>
                     </div>
+                    {infoSegments[0]||mediaPaths[0] ? <div className='body' >
+                        {infoSegments[0] ? <p>{infoSegments[0]}</p>:<></>}
+                        {mediaPaths[0] ? <div> <img src={mediaPaths[0]}></img></div>:<></>}
+                    </div>:<></>}
+                    {infoSegments[1]||mediaPaths[1] ? <div className='body' >
+                        {infoSegments[1] ? <p>{infoSegments[1]}</p>:<></>}
+                        {mediaPaths[1] ? <div> <img src={mediaPaths[1]}></img></div>:<></>}
+                    </div>:<></>}
+                    {infoSegments[2]||mediaPaths[2] ? <div className='body' >
+                        {infoSegments[2] ? <p>{infoSegments[2]}</p>:<></>}
+                        {mediaPaths[2] ? <div> <img src={mediaPaths[2]}></img></div>:<></>}
+                    </div>:<></>}
+                    {frontEndTech[0]||backEndTech[0] ? <div className='body techLists' >
+                        {frontEndTech[0] ? <div>
+                            <p><b>Front-end</b></p>
+                            <ul>
+                                {frontEndTech.map((item, index) => (
+                            <li key={index}>{item} </li>
+                        ))}
+                            </ul>
+                        </div> : <></>}
+                        {backEndTech[0] ? <div>
+                            <p><b>Back-end</b></p>
+                            <ul>
+                                {backEndTech.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                            </ul>
+                        </div> : <></>}
+                    </div>:<></>}
                 </div>
             </dialog>
         </>
