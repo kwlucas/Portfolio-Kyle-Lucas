@@ -73,13 +73,13 @@ export default function Header() {
   // }
 
   return (
-    <header className={currentDirectory === '/' ? 'banner' : 'navbar'}>
+    <header className={currentDirectory === '/' || currentDirectory === '/Portfolio-Kyle-Lucas/' ? 'banner' : 'navbar'}>
       {/* currentDirectory === 'Home' ? <div id='bannerGrid'>{createTiles}</div> : <></> */}
       <div id='nameDisplay'>
         <h1><NavLink to='/'>Kyle Lucas</NavLink></h1>
         <div>Web Developer</div>
       </div>
-      {currentDirectory === '/' ? <nav><Navigation /></nav> : <Navigation />}
+      {currentDirectory === '/' || currentDirectory === '/Portfolio-Kyle-Lucas/' ? <nav><Navigation /></nav> : <Navigation />}
     </header>
   );
 }
