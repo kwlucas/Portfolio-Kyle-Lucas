@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/Portfolio-Kyle-Lucas/static/css/main.6b03633e.css",
-    "main.js": "/Portfolio-Kyle-Lucas/static/js/main.bf0281c0.js",
+    "main.css": "/Portfolio-Kyle-Lucas/static/css/main.0dea84dd.css",
+    "main.js": "/Portfolio-Kyle-Lucas/static/js/main.965d0e24.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-Kyle-Lucas/static/js/787.1ed0c42c.chunk.js",
+    "static/media/CodeClipsNewPost.gif": "/Portfolio-Kyle-Lucas/static/media/CodeClipsNewPost.9aae8dbff82e1e8bc649.gif",
     "static/media/kyleImage01.jpg": "/Portfolio-Kyle-Lucas/static/media/kyleImage01.9c640f1ffc465f68b0ab.jpg",
-    "static/media/KyleLucasResume.pdf": "/Portfolio-Kyle-Lucas/static/media/KyleLucasResume.535be57d9eba58fe7f97.pdf",
+    "static/media/CodeClipsNewUser.gif": "/Portfolio-Kyle-Lucas/static/media/CodeClipsNewUser.993355c70353fbbadc75.gif",
+    "static/media/CodeClips-Image.PNG": "/Portfolio-Kyle-Lucas/static/media/CodeClips-Image.62772d88c390601df1ed.PNG",
+    "static/media/Statblock3.PNG": "/Portfolio-Kyle-Lucas/static/media/Statblock3.6a4c60729fb10f511584.PNG",
+    "static/media/Statblock1.PNG": "/Portfolio-Kyle-Lucas/static/media/Statblock1.da5e34142eef5e28382b.PNG",
+    "static/media/Kyle_Lucas_Resume2023.pdf": "/Portfolio-Kyle-Lucas/static/media/Kyle_Lucas_Resume2023.6bc8997bfcd54fb7b2f0.pdf",
+    "static/media/FetchCoinpreview.PNG": "/Portfolio-Kyle-Lucas/static/media/FetchCoinpreview.38ecc4b7f5cef44cbba9.PNG",
+    "static/media/Statblock2.PNG": "/Portfolio-Kyle-Lucas/static/media/Statblock2.f9cc580e8b7b1402cc4e.PNG",
+    "static/media/RepoImage.PNG": "/Portfolio-Kyle-Lucas/static/media/RepoImage.e9eba4eb4570c5a771b2.PNG",
     "static/media/github.svg": "/Portfolio-Kyle-Lucas/static/media/github.22d0e1f048d8e985da21cdbe4dbb61fe.svg",
     "index.html": "/Portfolio-Kyle-Lucas/index.html",
     "static/media/linkedin.svg": "/Portfolio-Kyle-Lucas/static/media/linkedin.5977b611e6f53b9f7fc250f8f5949f8e.svg",
-    "main.6b03633e.css.map": "/Portfolio-Kyle-Lucas/static/css/main.6b03633e.css.map",
-    "main.bf0281c0.js.map": "/Portfolio-Kyle-Lucas/static/js/main.bf0281c0.js.map",
+    "main.0dea84dd.css.map": "/Portfolio-Kyle-Lucas/static/css/main.0dea84dd.css.map",
+    "main.965d0e24.js.map": "/Portfolio-Kyle-Lucas/static/js/main.965d0e24.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-Kyle-Lucas/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b03633e.css",
-    "static/js/main.bf0281c0.js"
+    "static/css/main.0dea84dd.css",
+    "static/js/main.965d0e24.js"
   ]
 }
