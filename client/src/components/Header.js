@@ -76,7 +76,7 @@ export default function Header() {
     <header className={currentDirectory === '/' || currentDirectory === '/Portfolio-Kyle-Lucas/' ? 'banner' : 'navbar'}>
       {/* currentDirectory === 'Home' ? <div id='bannerGrid'>{createTiles}</div> : <></> */}
       <div id='nameDisplay'>
-        <h1><NavLink to='/'>Kyle Lucas</NavLink></h1>
+        <h1><NavLink to='/Portfolio-Kyle-Lucas/'>Kyle Lucas</NavLink></h1>
         <div>Web Developer</div>
       </div>
       {currentDirectory === '/' || currentDirectory === '/Portfolio-Kyle-Lucas/' ? <nav><Navigation /></nav> : <Navigation />}

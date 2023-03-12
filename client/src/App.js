@@ -18,11 +18,11 @@ function App() {
       <DirectoryProvider>
         <Header />
         <Routes>
-          <Route path='/' element={<></>} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/portfolio' element={<Portfolio />} />
-          <Route path='/resume' element={<Resume />} />
+          <Route path='/Portfolio-Kyle-Lucas/' element={<></>} />
+          <Route path='/Portfolio-Kyle-Lucas/about' element={<About />} />
+          <Route path='/Portfolio-Kyle-Lucas/contact' element={<Contact />} />
+          <Route path='/Portfolio-Kyle-Lucas/portfolio' element={<Portfolio />} />
+          <Route path='/Portfolio-Kyle-Lucas/resume' element={<Resume />} />
         </Routes>
         <Footer />
       </DirectoryProvider>
