@@ -25,7 +25,8 @@ export default function Contact() {
 
   return (
     <main>
-      <h2>Contact - Note: Is not operational at the moment. Please, see my contact info on my resume.</h2>
+      <h2>Contact</h2>
+      <h3>Note: The site is not hooked up to a back-end at the moment, meaning this form is non-functional. Please see my resume for contact info.</h3>
       <form onSubmit={handleSubmit}>
         <fieldset>
           <div>
