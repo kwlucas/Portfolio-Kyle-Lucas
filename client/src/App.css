@@ -215,7 +215,7 @@ a{
   text-decoration: inherit;
 }
 
-.tab .active {
+.tab .active, .tab.active {
   font-weight: 1000;
 }
 
