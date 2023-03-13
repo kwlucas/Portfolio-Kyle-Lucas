@@ -1,13 +1,13 @@
 import React/* , { useEffect, useState } */ from 'react';
-// import { useDirectory } from '../utils/DirectoryContext';
-import { useLocation, NavLink } from 'react-router-dom';
+import { useDirectory } from '../utils/DirectoryContext';
+// import { useLocation, NavLink } from 'react-router-dom';
 import Navigation from './Navigation';
 // import anime from 'animejs';
 
 export default function Header() {
 
-  // const { currentDirectory, changeDirectory } = useDirectory();
-  const currentDirectory = useLocation().pathname;
+  const { currentDirectory, changeDirectory } = useDirectory();
+  // const currentDirectory = useLocation().pathname;
   /* const [size, setSize] = useState({
     width: document.body.clientWidth,
     height: document.body.clientHeight
@@ -66,20 +66,24 @@ export default function Header() {
     return <div key={index} className='tile' onClick={handleMouseEnter}></div>;
   }); */
 
-  // function nameClick() {
-  //   if (currentDirectory !== 'Home') {
-  //     changeDirectory('Home');
-  //   }
-  // }
+  
+  
+  function nameClick() {
+      if (currentDirectory !== 'Home') {
+          changeDirectory('Home');
+        }
+      }
 
+      // <h1><NavLink to='/Portfolio-Kyle-Lucas/'>Kyle Lucas</NavLink></h1>      
+    // {currentDirectory === '/' || currentDirectory === '/Portfolio-Kyle-Lucas/' ? <nav><Navigation /></nav> : <Navigation />}
   return (
-    <header className={currentDirectory === '/' || currentDirectory === '/Portfolio-Kyle-Lucas/' ? 'banner' : 'navbar'}>
+    <header className={currentDirectory === 'Home' ? 'banner' : 'navbar'}>
       {/* currentDirectory === 'Home' ? <div id='bannerGrid'>{createTiles}</div> : <></> */}
       <div id='nameDisplay'>
-        <h1><NavLink to='/Portfolio-Kyle-Lucas/'>Kyle Lucas</NavLink></h1>
+        <h1 onClick={nameClick}>Kyle Lucas</h1>
         <div>Web Developer</div>
       </div>
-      {currentDirectory === '/' || currentDirectory === '/Portfolio-Kyle-Lucas/' ? <nav><Navigation /></nav> : <Navigation />}
+      {currentDirectory === 'Home' ? <nav><Navigation /></nav> : <Navigation />}
     </header>
   );
 }
