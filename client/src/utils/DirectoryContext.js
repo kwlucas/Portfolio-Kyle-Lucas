@@ -16,7 +16,7 @@ export const DirectoryProvider = ({ children }) => {
     if (!directory) {
       return;
     }
-    console.log('inside directory change');
+    // console.log('inside directory change');
     setDirectory(directory);
   };
 
