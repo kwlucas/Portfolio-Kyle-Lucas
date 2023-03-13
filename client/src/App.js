@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 // import Contact from './pages/Contact';
 // import Portfolio from './pages/Portfolio';
 // import Resume from './pages/Resume';
-  {/* <Router>
+  /* <Router>
         <Routes>
           <Route path='/Portfolio-Kyle-Lucas/' element={<></>} />
           <Route path='/Portfolio-Kyle-Lucas/about' element={<About />} />
@@ -17,7 +17,7 @@ import Footer from './components/Footer';
           <Route path='/Portfolio-Kyle-Lucas/portfolio' element={<Portfolio />} />
           <Route path='/Portfolio-Kyle-Lucas/resume' element={<Resume />} />
         </Routes>
-      </Router> */}
+      </Router> */
 
 
 function App() {
