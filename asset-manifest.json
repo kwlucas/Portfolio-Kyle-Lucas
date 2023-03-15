@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Kyle-Lucas/static/css/main.30973374.css",
-    "main.js": "/Portfolio-Kyle-Lucas/static/js/main.45493c5b.js",
+    "main.js": "/Portfolio-Kyle-Lucas/static/js/main.cf50824d.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-Kyle-Lucas/static/js/787.1ed0c42c.chunk.js",
     "static/media/CodeClipsNewPost.gif": "/Portfolio-Kyle-Lucas/static/media/CodeClipsNewPost.9aae8dbff82e1e8bc649.gif",
     "static/media/kyleImage01.jpg": "/Portfolio-Kyle-Lucas/static/media/kyleImage01.9c640f1ffc465f68b0ab.jpg",
@@ -17,11 +17,11 @@
     "index.html": "/Portfolio-Kyle-Lucas/index.html",
     "static/media/linkedin.svg": "/Portfolio-Kyle-Lucas/static/media/linkedin.5977b611e6f53b9f7fc250f8f5949f8e.svg",
     "main.30973374.css.map": "/Portfolio-Kyle-Lucas/static/css/main.30973374.css.map",
-    "main.45493c5b.js.map": "/Portfolio-Kyle-Lucas/static/js/main.45493c5b.js.map",
+    "main.cf50824d.js.map": "/Portfolio-Kyle-Lucas/static/js/main.cf50824d.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-Kyle-Lucas/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30973374.css",
-    "static/js/main.45493c5b.js"
+    "static/js/main.cf50824d.js"
   ]
 }
