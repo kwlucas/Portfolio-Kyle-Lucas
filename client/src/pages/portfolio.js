@@ -58,7 +58,7 @@ const projects = [
     {
         name: 'Other Projects',
         date: '',
-        description: 'Additional projects that I have worked on include: the SECOR Cares (a non-profit organization) website, Slate (my own CSS framework), a blog site, a schedule app, a team profile/roster generator, a collection of portfolio sites, a password generator, weather dashboard app, a note taking app, several Discord moderation bots, a README generator, and a quiz app.Awsome description of project.',
+        description: 'Additional projects that I have worked on include: the SECOR Cares (a non-profit organization) website, Slate (my own CSS framework), a blog site, a schedule app, a team profile/roster generator, a collection of portfolio sites, a password generator, weather dashboard app, a note taking app, several Discord moderation bots, a README generator, and a quiz app.',
         infoSegments: ['You can see most of these projects on my Github page.'],
         frontEndTech: [],
         backEndTech: [],
