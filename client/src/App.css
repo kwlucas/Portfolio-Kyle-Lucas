@@ -34,7 +34,6 @@ header {
   justify-content: space-around;
   align-items: center;
   min-height: 60px;
-  z-index: 1000;
   transition: .3s ease all;
 }
 
@@ -58,6 +57,17 @@ header.banner>#nameDisplay {
 
 #nameDisplay {
   cursor: pointer;
+}
+
+.banner>#nameDisplay::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 0;
+  background: radial-gradient(775px circle at var(--mouseX) var(--mouseY), rgba(255, 255, 255, 0.25), transparent 40%);
 }
 
 header:not(.banner)>#nameDisplay>div {

@@ -1,4 +1,4 @@
-import React/* , { useEffect, useState } */ from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDirectory } from '../utils/DirectoryContext';
 // import { useLocation, NavLink } from 'react-router-dom';
 import Navigation from './Navigation';
@@ -66,18 +66,37 @@ export default function Header() {
     return <div key={index} className='tile' onClick={handleMouseEnter}></div>;
   }); */
 
-  
-  
-  function nameClick() {
-      if (currentDirectory !== 'Home') {
-          changeDirectory('Home');
-        }
-      }
+  const [mousePos, setMousePos] = useState({
+    X: 0,
+    Y: 0
+  });
 
-      // <h1><NavLink to='/Portfolio-Kyle-Lucas/'>Kyle Lucas</NavLink></h1>      
-    // {currentDirectory === '/' || currentDirectory === '/Portfolio-Kyle-Lucas/' ? <nav><Navigation /></nav> : <Navigation />}
+  useEffect(() => {
+    (document.querySelectorAll('#nameDisplay') || []).forEach(display => {
+      const rect = display.getBoundingClientRect();
+      display.style.setProperty('--mouseX', `${mousePos.X - rect.left}px`);
+      display.style.setProperty('--mouseY', `${mousePos.Y - rect.top}px`);
+
+    });
+  })
+
+  function handleMouseMove(event) {
+    setMousePos({
+      X: event.clientX,
+      Y: event.clientY
+    });
+  }
+
+  function nameClick() {
+    if (currentDirectory !== 'Home') {
+      changeDirectory('Home');
+    }
+  }
+
+  // <h1><NavLink to='/Portfolio-Kyle-Lucas/'>Kyle Lucas</NavLink></h1>      
+  // {currentDirectory === '/' || currentDirectory === '/Portfolio-Kyle-Lucas/' ? <nav><Navigation /></nav> : <Navigation />}
   return (
-    <header className={currentDirectory === 'Home' ? 'banner' : 'navbar'}>
+    <header className={currentDirectory === 'Home' ? 'banner' : 'navbar'} onMouseMove={handleMouseMove}>
       {/* currentDirectory === 'Home' ? <div id='bannerGrid'>{createTiles}</div> : <></> */}
       <div id='nameDisplay'>
         <h1 onClick={nameClick}>Kyle Lucas</h1>
