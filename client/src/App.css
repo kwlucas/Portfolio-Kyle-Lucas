@@ -14,6 +14,7 @@ html {
   --columns: 1;
   --bgColor: #121317;
   --overlayColor: #00000080;
+  --cardBgColor: #202124;
 }
 
 h1,
@@ -284,7 +285,7 @@ a{
   border-radius: inherit;
   position: absolute;
   z-index: 3;
-  background: radial-gradient(775px circle at var(--mouseX) var(--mouseY), rgba(255, 255, 255, 0.06), transparent 40%);
+  background: radial-gradient(775px circle at var(--mouseX) var(--mouseY), rgba(255, 255, 255, 0.25), transparent 40%);
   opacity: 0;
   transition: opacity 500ms;
 }
@@ -302,7 +303,8 @@ a{
   margin: 1px;
   border-radius: inherit;
   /* background-color: rgb(56, 81, 112); */
-  background-color: rgba(46 61 80);
+  /* background-color: rgba(46 61 80); */
+  background-color: var(--cardBgColor);
   z-index: 2;
   overflow: hidden;
 }
@@ -356,7 +358,7 @@ a{
   height: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 0 3px 3px rgba(46 61 80) inset;
+  box-shadow: 0 0 3px 3px var(--cardBgColor) inset;
   z-index: 3;
 }
 
@@ -373,7 +375,8 @@ a{
   border-radius: inherit;
   position: absolute; */
   z-index: 1;
-  background: radial-gradient(387.5px circle at var(--mouseX) var(--mouseY), rgba(255, 255, 255, 0.3), transparent 40%);
+  /* rgba(255, 255, 255, 0.3) */
+  background: radial-gradient(387.5px circle at var(--mouseX) var(--mouseY), rgba(255, 255, 255, 0.5), transparent 40%);
   opacity: 0; 
   transition: opacity 500ms;
 }
