@@ -15,6 +15,7 @@ html {
   --bgColor: #121317;
   --overlayColor: #00000080;
   --cardBgColor: #202124;
+  --infoColor: #3FAEFC;
 }
 
 h1,
@@ -35,6 +36,7 @@ header {
   align-items: center;
   min-height: 60px;
   transition: .3s ease all;
+  z-index: 4;
 }
 
 header.banner {
@@ -235,6 +237,7 @@ button {
 .tab {
   font-weight: normal;
   cursor: pointer;
+  text-align: center;
 }
 
 a{
@@ -244,7 +247,16 @@ a{
 
 .tab .active, .tab.active {
   font-weight: 1000;
+  border-bottom: 1px solid var(--infoColor);
 }
+/* .tab.active::before{
+  content: '';
+  width: 20%;
+  height: 100%;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+} */
 
 .container {
   padding: 0.33rem;
