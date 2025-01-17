@@ -59,6 +59,20 @@ const projects = [
         mediaPaths: []
     },
     {
+        name: 'E-Commerce Back-End',
+        date: 'Dec 2022',
+        category: 'back-end',
+        description: 'A complete API for accessing an SQL database designed for an e-commerce site with data such as information on products, categories, and tags.',
+        infoSegments: ['This was a project that I did while learning some backend technologies. I designed and created an SQL database for use in a dropshipping or e-comerce website. Then created an API system using Node and Express to access the database.'],
+        frontEndTech: [],
+        backEndTech: ['mySQL', 'Sequelize', 'Node.js', 'Express'],
+        mainTech: ['SQL', 'Node', 'Express'],
+        repo: 'https://github.com/kwlucas/E-Commerce-Back-End',
+        deployment: 'https://github.com/kwlucas/E-Commerce-Back-End',
+        imagePath: otherProjectsImg1,
+        mediaPaths: []
+    },
+    {
         name: 'Other Projects',
         date: '',
         category: 'misc',
