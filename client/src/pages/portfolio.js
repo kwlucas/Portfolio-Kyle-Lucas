@@ -59,6 +59,20 @@ const projects = [
         mediaPaths: []
     },
     {
+        name: 'The Tech Blog',
+        date: 'Nov 2022',
+        category: 'full-stack',
+        description: 'A fully functional blog site that allows users to create and login with an account to comment on, share, and create posts.',
+        infoSegments: ['The blog site project was primarily focused on the backend, creating users and data only accessible to individual users added a layer of complexity that I had not encountered before.'],
+        frontEndTech: ['HTML', 'CSS', 'Handlebars.js (templating library)'],
+        backEndTech: ['mySQL', 'Sequelize', 'Node.js', 'Express', 'Bcrypt (password hashing library)'],
+        mainTech: ['SQL', 'Express', 'HTML', 'CSS'],
+        repo: 'https://github.com/kwlucas/Tech-Blog',
+        deployment: 'https://github.com/kwlucas/Tech-Blog',
+        imagePath: otherProjectsImg1,
+        mediaPaths: []
+    },
+    {
         name: 'E-Commerce Back-End',
         date: 'Dec 2022',
         category: 'back-end',
@@ -69,6 +83,20 @@ const projects = [
         mainTech: ['SQL', 'Node', 'Express'],
         repo: 'https://github.com/kwlucas/E-Commerce-Back-End',
         deployment: 'https://github.com/kwlucas/E-Commerce-Back-End',
+        imagePath: otherProjectsImg1,
+        mediaPaths: []
+    },
+    {
+        name: 'Personnel Tracker',
+        date: 'Nov 2022',
+        category: 'back-end',
+        description: 'A terminal based application using an SQL database for keeping track of departments, roles, and employees within an organization.',
+        infoSegments: ['This was a project that I did while learning some backend technologies. I designed and created an SQL database for use in a dropshipping or e-comerce website. Then created an API system using Node and Express to access the database.'],
+        frontEndTech: [],
+        backEndTech: ['mySQL', 'Node.js', 'Inquirer', 'Console.table'],
+        mainTech: ['SQL', 'Node'],
+        repo: 'https://github.com/kwlucas/Employee-Tracker',
+        deployment: 'https://github.com/kwlucas/Employee-Tracker',
         imagePath: otherProjectsImg1,
         mediaPaths: []
     },
