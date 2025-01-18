@@ -20,7 +20,7 @@ export const DirectoryProvider = ({ children }) => {
     setDirectory(directory);
   };
 
-  const directories = ['About', 'Portfolio', 'Contact', 'Resume'];
+  const directories = ['About', 'Portfolio', 'Resume'];
 
   // The provider component will wrap all other components inside of it that need access to our global state
   return (
