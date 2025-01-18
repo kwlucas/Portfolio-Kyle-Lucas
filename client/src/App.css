@@ -129,6 +129,30 @@ nav {
   width: min-content;
 }
 
+.tab {
+  font-weight: normal;
+  cursor: pointer;
+  text-align: center;
+}
+
+:not(nav)>.tab{
+  height: 60px;
+  line-height: 60px;
+}
+
+.tab.active {
+  font-weight: 1000;
+  border-bottom: 1px solid var(--infoColor);
+}
+/* .tab.active::before{
+  content: '';
+  width: 20%;
+  height: 100%;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+} */
+
 main {
   padding: 0.66rem;
 }
@@ -234,34 +258,10 @@ button {
   cursor: pointer;
 }
 
-.tab {
-  font-weight: normal;
-  cursor: pointer;
-  text-align: center;
-}
-
-:not(nav)>.tab{
-  height: 60px;
-  line-height: 60px;
-}
-
 a{
   color: inherit;
   text-decoration: inherit;
 }
-
-.tab .active, .tab.active {
-  font-weight: 1000;
-  border-bottom: 1px solid var(--infoColor);
-}
-/* .tab.active::before{
-  content: '';
-  width: 20%;
-  height: 100%;
-  border-radius: inherit;
-  position: absolute;
-  top: 0;
-} */
 
 .container {
   padding: 0.33rem;
