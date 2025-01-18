@@ -23,6 +23,7 @@ export default function Project(props) {
     }
 
     //WHY WONT THE MODALS CLOSE ON MOBILE?!?!?!?!?!
+    //Fixed by removing close button. Make it toggle with every click.
 
     return (
         <>
@@ -42,19 +43,28 @@ export default function Project(props) {
             </div>
             {status && <dialog onClick={handleClose} open={status}>
                 <div className='content'>
-                    <div onClick={handleClose} className='closeBtn'>x</div>
-                    <div className='header'>
-                        <a href={deployment} target='_blank' rel='external'>{name}</a>
-                        <a href={repo} target='_blank' rel='external'>
-                            <img src={githubIcon} width='30em' alt='The GitHub Repository'></img>
-                        </a>
-                    </div>
-                    <div className='body' >
-                        <p>{description}</p>
-                        <div>
+                    {/* <div onClick={handleClose} className='closeBtn'>x</div> */}
+                    <section>
+                        <div className='mainImage' >
                             <img src={imagePath}></img>
                         </div>
-                    </div>
+                        <div className='mainInfo'>
+                            <div className='header'>
+                                <a href={deployment} target='_blank' rel='external'>{name}</a>
+                                <a href={repo} target='_blank' rel='external'>
+                                    <img src={githubIcon} width='30em' alt='The GitHub Repository'></img>
+                                </a>
+                            </div>
+                            <ul className='mainTech'>
+                        {mainTech.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                            <div className='description'>
+                                <p>{description}</p>
+                            </div>
+                        </div>
+                    </section>
                     {infoSegments[0]||mediaPaths[0] ? <div className='body' >
                         {infoSegments[0] ? <p>{infoSegments[0]}</p>:<></>}
                         {mediaPaths[0] ? <div> <img src={mediaPaths[0]}></img></div>:<></>}
