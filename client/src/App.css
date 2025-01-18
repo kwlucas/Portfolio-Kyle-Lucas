@@ -240,6 +240,11 @@ button {
   text-align: center;
 }
 
+:not(nav)>.tab{
+  height: 60px;
+  line-height: 60px;
+}
+
 a{
   color: inherit;
   text-decoration: inherit;
