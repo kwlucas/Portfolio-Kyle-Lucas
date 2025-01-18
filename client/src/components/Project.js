@@ -12,12 +12,12 @@ export default function Project(props) {
         setStatus(!status);
     } */
 
-    function handleOpen(event){
+    function handleOpen(event) {
         event.stopPropagation();
         setStatus(true);
     }
 
-    function handleClose(event){
+    function handleClose(event) {
         event.stopPropagation();
         setStatus(false);
     }
@@ -56,47 +56,47 @@ export default function Project(props) {
                                 </a>
                             </div>
                             <ul className='mainTech'>
-                        {mainTech.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                    </ul>
+                                {mainTech.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
                             <div className='description'>
                                 <p>{description}</p>
                             </div>
                         </div>
                     </section>
-                    {infoSegments[0]||mediaPaths[0] ? <div className='body' >
-                        {infoSegments[0] ? <p>{infoSegments[0]}</p>:<></>}
-                        {mediaPaths[0] ? <div> <img src={mediaPaths[0]}></img></div>:<></>}
-                    </div>:<></>}
-                    {infoSegments[1]||mediaPaths[1] ? <div className='body' >
-                        {infoSegments[1] ? <p>{infoSegments[1]}</p>:<></>}
-                        {mediaPaths[1] ? <div> <img src={mediaPaths[1]}></img></div>:<></>}
-                    </div>:<></>}
-                    {infoSegments[2]||mediaPaths[2] ? <div className='body' >
-                        {infoSegments[2] ? <p>{infoSegments[2]}</p>:<></>}
-                        {mediaPaths[2] ? <div> <img src={mediaPaths[2]}></img></div>:<></>}
-                    </div>:<></>}
-                    {frontEndTech[0]||backEndTech[0] ? <div className='body techLists' >
+                    {infoSegments[0] || mediaPaths[0] ? <div className='body' >
+                        {infoSegments[0] ? <p>{infoSegments[0]}</p> : <></>}
+                        {mediaPaths[0] ? <div> <img src={mediaPaths[0]}></img></div> : <></>}
+                    </div> : <></>}
+                    {infoSegments[1] || mediaPaths[1] ? <div className='body' >
+                        {infoSegments[1] ? <p>{infoSegments[1]}</p> : <></>}
+                        {mediaPaths[1] ? <div> <img src={mediaPaths[1]}></img></div> : <></>}
+                    </div> : <></>}
+                    {infoSegments[2] || mediaPaths[2] ? <div className='body' >
+                        {infoSegments[2] ? <p>{infoSegments[2]}</p> : <></>}
+                        {mediaPaths[2] ? <div> <img src={mediaPaths[2]}></img></div> : <></>}
+                    </div> : <></>}
+                    {frontEndTech[0] || backEndTech[0] ? <div className='body techLists' >
                         {frontEndTech[0] ? <div>
                             <p><b>Front-end</b></p>
                             <ul>
                                 {frontEndTech.map((item, index) => (
-                            <li key={index}>{item} </li>
-                        ))}
+                                    <li key={index}>{item} </li>
+                                ))}
                             </ul>
                         </div> : <></>}
                         {backEndTech[0] ? <div>
                             <p><b>Back-end</b></p>
                             <ul>
                                 {backEndTech.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
+                                    <li key={index}>{item}</li>
+                                ))}
                             </ul>
                         </div> : <></>}
-                    </div>:<></>}
+                    </div> : <></>}
                 </div>
-            </dialog> }
+            </dialog>}
         </>
     );
 }
