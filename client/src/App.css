@@ -34,7 +34,7 @@ header {
   position: relative;
   width: 100%;
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   min-height: 60px;
   transition: .3s ease all;
@@ -57,10 +57,6 @@ header.banner>#nameDisplay {
   height: 100%;
   pointer-events: none;
   font-size: x-large;
-}
-
-#nameDisplay {
-  cursor: pointer;
 }
 
 .banner>#nameDisplay::before {
@@ -103,8 +99,10 @@ nav {
   display: inline-flex;
   width: 100%;
   justify-content: space-evenly;
-  padding: 0.66rem;
+  align-items: center;
+  padding: 0;
   transition: .3s ease all;
+  min-height: 3rem;
   /* z-index: 2; */
 }
 
@@ -119,23 +117,44 @@ nav {
   left: 0;
 }
 
-.banner>nav {
-  padding: 1rem;
+nav>div{
+  min-height: 3rem;
+  line-height: 3rem;
+  width: 100%;
 }
 
-.navbar #nameDisplay {
-  text-align: center;
+nav>.tab:hover{
+  background-color: #ffffff11;
 }
-
 .navbar h1 {
   font-size: 20px;
-  width: min-content;
+  /* width: min-content; */
 }
 
-.tab {
+header.navbar>.tab{
+  min-width: 6%;
+}
+
+header.navbar>#nameDisplay{
+  min-width:fit-content;
+  height: 60px;
+  text-align: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.tab, #nameDisplay {
   font-weight: normal;
   cursor: pointer;
   text-align: center;
+  transition: all 0.5s;
+}
+
+.navbar>.tab:hover, .navbar>div:first-child:hover{
+  -webkit-backdrop-filter:invert(40%);
+  backdrop-filter: invert(40%);
 }
 
 :not(nav)>.tab {

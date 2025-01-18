@@ -98,11 +98,11 @@ export default function Header() {
   return (
     <header className={currentDirectory === 'Home' ? 'banner' : 'navbar'} onMouseMove={handleMouseMove}>
       {/* currentDirectory === 'Home' ? <div id='bannerGrid'>{createTiles}</div> : <></> */}
-      <div id='nameDisplay'>
-        <h1 onClick={nameClick}>Kyle Lucas</h1>
+      <div id='nameDisplay'onClick={nameClick}>
+        <h1>Kyle Lucas</h1>
         <div>Web Developer</div>
       </div>
-      {currentDirectory === 'Home' ? <nav><Navigation /></nav> : <Navigation />}
+      {currentDirectory === 'Home' ? <nav><div></div><Navigation /><div></div></nav> : <Navigation />}
     </header>
   );
 }
