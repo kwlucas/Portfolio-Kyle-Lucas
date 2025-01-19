@@ -4,7 +4,7 @@ import githubIcon from '../images/github.svg';
 
 export default function Project(props) {
     const [status, setStatus] = useState(false);
-    const { name, description, infoSegments, frontEndTech, backEndTech, mainTech, repo, deployment, imagePath, mediaPaths } = props.projectData
+    const { name, description, infoSegments, functionality, frontEndTech, backEndTech, mainTech, repo, deployment, imagePath, mediaPaths } = props.projectData
 
     /* function handleClick(event) {
         //status ? setStatus(false) : setStatus(true);
@@ -65,6 +65,15 @@ export default function Project(props) {
                             </div>
                         </div>
                     </section>
+                    {functionality[0] ? 
+                    <div className='functions'>
+                        <h4>Functionality</h4>
+                        <ul>
+                            {functionality.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul>
+                    </div> : <></> }
                     {infoSegments[0] || mediaPaths[0] ? <div className='body' >
                         {infoSegments[0] ? <p>{infoSegments[0]}</p> : <></>}
                         {mediaPaths[0] ? <div> <img src={mediaPaths[0]}></img></div> : <></>}
