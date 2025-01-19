@@ -17,6 +17,7 @@ html {
   --overlayColor: #00000080;
   --cardBgColor: #202124;
   --grayLineColor: #3c4043;
+  --grayTextColor: #bdc1c6;
   --infoColor: #3FAEFC;
   --subInfoColor: #399CE3;
   --darkInfoColor: #1B4A6C;
@@ -581,6 +582,30 @@ progress::-webkit-progress-bar {
   transition: opacity 500ms;
 }
 
+.techLists>div{
+  width: 50%;
+  text-align: center;
+}
+
+.techLists p{
+  border-bottom: 1px solid var(--infoColor);
+  margin: 0 0 0.5rem 0;
+}
+
+.techLists ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.techLists ul>li{
+  color: var(--grayTextColor);
+}
+
+.techLists ul>li:not(:last-child){
+  margin-bottom: 0.1515rem;
+}
+
 ul.techList{
   text-align: center;
   padding: 0;
@@ -726,7 +751,7 @@ ul.mainTech {
 
 ul.mainTech li {
   display: inline-block;
-  color: #bdc1c6;
+  color: var(--grayTextColor);
   width: 100%;
   text-align: center;
 }
