@@ -11,12 +11,33 @@ export default function About() {
                     <div>
                         <div>
                             <h2>Kyle Lucas</h2>
-                        </div>
-                        <div>
                             <h3>Developer</h3>
-                            <div>Coding</div>
-                            <div>Design</div>
-                            <div>Passion</div>
+                        </div>
+                        <div className='skillChart'>
+                            <div>
+                                <h4>JavaScript</h4>
+                                <progress value={95} max={100}></progress>
+                            </div>
+                            <div>
+                                <h4>CSS</h4>
+                                <progress value={90} max={100}></progress>
+                            </div>
+                            <div>
+                                <h4>HTML</h4>
+                                <progress value={90} max={100}></progress>
+                            </div>
+                            <div>
+                                <h4>SQL</h4>
+                                <progress value={30} max={100}></progress>
+                            </div>
+                            <div>
+                                <h4>Python</h4>
+                                <progress value={50} max={100}></progress>
+                            </div>
+                            <div>
+                                <h4>C#</h4>
+                                <progress value={80} max={100}></progress>
+                            </div>
                         </div>
                     </div>
                     <div>
