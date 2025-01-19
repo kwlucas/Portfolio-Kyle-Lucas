@@ -145,27 +145,35 @@ export default function Portfolio() {
         <main className='portfolioPage'>
             <h2>Portfolio</h2>
             <section>
-            <div>
-                <h3>Full-Stack</h3>
-            </div>
-            <div className='cardContainer' onMouseMove={handleMouseMove}>
-                {fullStackProjects.map((project, index) => (
-                    <Project key={index} projectData={project} />
-                ))}
-            </div>
+                <div>
+                    <h3>Full-Stack</h3>
+                </div>
+                <div className='cardContainer' onMouseMove={handleMouseMove}>
+                    {fullStackProjects.map((project, index) => (
+                        <Project key={index} projectData={project} />
+                    ))}
+                </div>
             </section>
-            <h3>Front-End</h3>
-            <div className='cardContainer' onMouseMove={handleMouseMove}>
-                {frontEndProjects.map((project, index) => (
-                    <Project key={index} projectData={project} />
-                ))}
-            </div>
-            <h3>Back-End</h3>
-            <div className='cardContainer' onMouseMove={handleMouseMove}>
-                {backEndProjects.map((project, index) => (
-                    <Project key={index} projectData={project} />
-                ))}
-            </div>
+            <section>
+                <div>
+                    <h3>Front-End</h3>
+                </div>
+                <div className='cardContainer' onMouseMove={handleMouseMove}>
+                    {frontEndProjects.map((project, index) => (
+                        <Project key={index} projectData={project} />
+                    ))}
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>Back-End</h3>
+                </div>
+                <div className='cardContainer' onMouseMove={handleMouseMove}>
+                    {backEndProjects.map((project, index) => (
+                        <Project key={index} projectData={project} />
+                    ))}
+                </div>
+            </section>
         </main>
     );
 }
