@@ -19,6 +19,7 @@ html {
   --grayLineColor: #3c4043;
   --infoColor: #3FAEFC;
   --subInfoColor: #399CE3;
+  --darkInfoColor: #1B4A6C;
 }
 
 h1,
@@ -333,24 +334,43 @@ progress{
   border: none;
   border-radius: 20px;
   width: 100%;
-  --fillColor: var(--infoColor);
+  --fillColor:  linear-gradient(90deg,var(--darkInfoColor),var(--infoColor))100%;
   background-color: var(--fillColor);
+}
+
+progress[value]::-webkit-progress-bar{
+  background: var(--subBgColor);
 }
 
 progress::-ms-fill {
-  background-color: var(--fillColor);
+  background: var(--fillColor);
 }
 
 progress::-moz-progress-bar {
-  background-color: var(--fillColor);
+  background: var(--fillColor);
 }
 
-progress::-webkit-progress-value {
-  background-color: var(--fillColor);
+progress[value]::-webkit-progress-value {
+  background: var(--fillColor);
+  border-radius: 20px;
 }
 
 progress::-webkit-progress-bar {
   background-color: var(--subBgColor);
+}
+
+.skillChart {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillChart>div {
+  width: 50%;
+  padding: 0.33rem;
+}
+
+.skillChart>div>div{
+  padding: 0.33rem 0;
 }
 
 .portfolioPage div:has(h3){
