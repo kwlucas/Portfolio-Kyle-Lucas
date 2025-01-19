@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio-Kyle-Lucas/static/css/main.ac125210.css",
-    "main.js": "/Portfolio-Kyle-Lucas/static/js/main.f91e9905.js",
-    "static/js/787.1ed0c42c.chunk.js": "/Portfolio-Kyle-Lucas/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/Portfolio-Kyle-Lucas/static/css/main.973b5396.css",
+    "main.js": "/Portfolio-Kyle-Lucas/static/js/main.dab8e7f9.js",
+    "static/js/453.1407b060.chunk.js": "/Portfolio-Kyle-Lucas/static/js/453.1407b060.chunk.js",
     "static/media/CodeClipsNewPost.gif": "/Portfolio-Kyle-Lucas/static/media/CodeClipsNewPost.9aae8dbff82e1e8bc649.gif",
     "static/media/kyleImage01.jpg": "/Portfolio-Kyle-Lucas/static/media/kyleImage01.9c640f1ffc465f68b0ab.jpg",
     "static/media/CodeClipsNewUser.gif": "/Portfolio-Kyle-Lucas/static/media/CodeClipsNewUser.993355c70353fbbadc75.gif",
@@ -16,12 +16,12 @@
     "static/media/github.svg": "/Portfolio-Kyle-Lucas/static/media/github.22d0e1f048d8e985da21cdbe4dbb61fe.svg",
     "index.html": "/Portfolio-Kyle-Lucas/index.html",
     "static/media/linkedin.svg": "/Portfolio-Kyle-Lucas/static/media/linkedin.5977b611e6f53b9f7fc250f8f5949f8e.svg",
-    "main.ac125210.css.map": "/Portfolio-Kyle-Lucas/static/css/main.ac125210.css.map",
-    "main.f91e9905.js.map": "/Portfolio-Kyle-Lucas/static/js/main.f91e9905.js.map",
-    "787.1ed0c42c.chunk.js.map": "/Portfolio-Kyle-Lucas/static/js/787.1ed0c42c.chunk.js.map"
+    "main.973b5396.css.map": "/Portfolio-Kyle-Lucas/static/css/main.973b5396.css.map",
+    "main.dab8e7f9.js.map": "/Portfolio-Kyle-Lucas/static/js/main.dab8e7f9.js.map",
+    "453.1407b060.chunk.js.map": "/Portfolio-Kyle-Lucas/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac125210.css",
-    "static/js/main.f91e9905.js"
+    "static/css/main.973b5396.css",
+    "static/js/main.dab8e7f9.js"
   ]
 }
