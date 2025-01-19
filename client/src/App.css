@@ -128,20 +128,19 @@ nav>.tab:hover{
   background-color: #ffffff11;
 }
 .navbar h1 {
-  font-size: 20px;
+  font-size: 25px;
   /* width: min-content; */
 }
 
-header.navbar>.tab{
+/* header.navbar>.tab{
   min-width: 6%;
-}
+} */
 
 header.navbar>#nameDisplay{
   min-width:fit-content;
   height: 60px;
   text-align: center;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0 0.66rem;
   display: flex;
   align-items: center;
 }
@@ -158,9 +157,12 @@ header.navbar>#nameDisplay{
   backdrop-filter: invert(40%);
 }
 
-:not(nav)>.tab {
+.navbar>.tab {
+  width: 100%;
+  min-width: 6%;
   height: 60px;
   line-height: 60px;
+  /* padding: 0 1rem; */
 }
 
 .tab.active {
@@ -694,12 +696,24 @@ ul.mainTech li:not(:first-child) {
     width: fit-content;
   }
 
+  header.navbar>#nameDisplay{
+    padding: 0 1rem;
+  }
+
+  .navbar>.tab {
+    width: 50%;
+  }
+
   .container {
     display: flex;
   }
 
   .container>* {
     flex: 1 1 0;
+  }
+
+  .portfolioPage div>h3{
+    min-width: 30%;
   }
 
   .mainTech li {
@@ -725,6 +739,18 @@ ul.mainTech li:not(:first-child) {
   .content section {
     flex-wrap: nowrap;
     flex-direction: row;
+  }
+
+  header.navbar>#nameDisplay{
+    padding: 0 1.25rem;
+  }
+
+  .navbar>.tab {
+    width: 12%;
+  }
+
+  .portfolioPage div>h3{
+    min-width: 20%;
   }
 
   .mainImage {
@@ -753,6 +779,18 @@ ul.mainTech li:not(:first-child) {
     text-align: center;
   }
 
+  header.navbar>#nameDisplay{
+    padding: 0 1.5rem;
+  }
+
+  .navbar>.tab {
+    width: 10%;
+  }
+
+  .portfolioPage div>h3{
+    min-width: 15%;
+  }
+
   .mainInfo p {
     align-self: center;
   }
@@ -776,6 +814,14 @@ ul.mainTech li:not(:first-child) {
   .container>img+p {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .navbar>.tab {
+    width: unset;
+  }
+
+  .portfolioPage div>h3{
+    min-width: 10%;
   }
 
   .mainInfo>.header>a {
