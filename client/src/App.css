@@ -475,16 +475,23 @@ a {
 
 .card ul.techList>li {
   display: inline;
-  padding: 0.25rem;
+  padding: 0.33rem;
+  color: var(--subInfoColor);
+  border-radius: 10px;
+  border: 1px solid var(--subInfoColor);
 }
 
-ul.techList>li:not(:last-child):after {
+ul.techList>li:not(:last-child){
+  margin-right: 2%;
+}
+
+/* ul.techList>li:not(:last-child):after {
   content: '*';
   position: relative;
   top: 3px;
   left: 2%;
   z-index: inherit;
-}
+} */
 
 .cardContainer:hover .card::after {
   opacity: 1;
