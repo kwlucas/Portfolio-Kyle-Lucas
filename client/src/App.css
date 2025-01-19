@@ -13,6 +13,7 @@ html {
   --rows: 1;
   --columns: 1;
   --bgColor: #121317;
+  --subBgColor: #1e1e1e;
   --overlayColor: #00000080;
   --cardBgColor: #202124;
   --grayLineColor: #3c4043;
@@ -320,6 +321,28 @@ a {
   border-radius: 10px;
 }
 
+.portfolioPage div:has(h3){
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0.66rem;
+}
+
+.portfolioPage div>h3{
+  min-width: 40%;
+  border: 1px solid var(--infoColor);
+  border-radius: 25px;
+  font-size: 1.25rem;
+  padding: 0.66rem;
+}
+
+.portfolioPage div:has(h3)::before,
+.portfolioPage div:has(h3)::after{
+  content:'';
+  height: 1px;
+  background-color: var(--infoColor);
+  width: 100%;
+}
 
 .cardContainer {
   display: flex;
