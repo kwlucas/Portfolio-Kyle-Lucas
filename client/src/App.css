@@ -602,7 +602,7 @@ progress::-webkit-progress-bar {
 .functions>ul{
   column-count: 1;
   margin: 0;
-  padding: 0 0 0 1.5rem;
+  padding: 0 0.5rem 0 1.5rem;
 }
 
 /* .functions>ul>li:not(:last-child){ */
@@ -695,7 +695,7 @@ dialog {
 dialog>.content {
   display: flex;
   flex-wrap: wrap;
-  width: auto;
+  width: 100%;
   /* background-color: rgba(46 61 80); */
   background-color: var(--cardBgColor);
   border-radius: 12px;
@@ -704,6 +704,7 @@ dialog>.content {
   color: #f5f5f5;
   position: relative;
   overflow: auto;
+  justify-content: center;
 }
 
 .content section {
@@ -798,8 +799,9 @@ ul.mainTech li:not(:first-child) {
 
 .mainInfo>.description {
   text-align: center;
-  background-color: var(--bgColor);
+  /* background-color: var(--grayLineColor); */
   padding: 0.33rem;
+  border: 2px solid var(--grayLineColor);
   border-radius: 5px;
   height: 100%;
   justify-content: center;
