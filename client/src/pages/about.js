@@ -7,38 +7,50 @@ export default function About() {
         <main>
             <div className='about container'>
                 <img src={aboutImage} alt='Kyle Lucas'></img>
+                <div>
+                    <h2>Kyle Lucas</h2>
+                    <h3>Web Developer</h3>
+                </div>
                 <section>
                     <div>
-                        <div>
-                            <h2>Kyle Lucas</h2>
-                            <h3>Developer</h3>
-                        </div>
                         <div className='skillChart'>
                             <div>
-                                <h4>JavaScript</h4>
-                                <progress value={95} max={100}></progress>
+                                <div>
+                                    <h4>JavaScript</h4>
+                                    <progress value={95} max={100}>95%</progress>
+                                </div>
+                                <div>
+                                    <h4>HTML</h4>
+                                    <progress value={80} max={100}>80%</progress>
+                                </div>
+                                <div>
+                                    <h4>CSS</h4>
+                                    <progress value={85} max={100}>85%</progress>
+                                </div>
                             </div>
                             <div>
-                                <h4>CSS</h4>
-                                <progress value={90} max={100}></progress>
-                            </div>
-                            <div>
-                                <h4>HTML</h4>
-                                <progress value={90} max={100}></progress>
-                            </div>
-                            <div>
-                                <h4>SQL</h4>
-                                <progress value={30} max={100}></progress>
-                            </div>
-                            <div>
-                                <h4>Python</h4>
-                                <progress value={50} max={100}></progress>
-                            </div>
-                            <div>
-                                <h4>C#</h4>
-                                <progress value={80} max={100}></progress>
+                                <div>
+                                    <h4>Python</h4>
+                                    <progress value={60} max={100}>60%</progress>
+                                </div>
+                                <div>
+                                    <h4>SQL</h4>
+                                    <progress value={35} max={100}>35%</progress>
+                                </div>
+                                <div>
+                                    <h4>C#</h4>
+                                    <progress value={80} max={100}>80%</progress>
+                                </div>
                             </div>
                         </div>
+                        <ul className='techList'>
+                            <li>React</li>
+                            <li>Jquery</li>
+                            <li>Bootstrap</li>
+                            <li>Node</li>
+                            <li>MySQL</li>
+                            <li>Express</li>
+                        </ul>
                     </div>
                     <div>
                         <p>I am a young programmer who has a real passion for the industry. I have always been rather objective and logical and prior to programming professionally I wrote code as a hobby for many years.<br></br>My journey with programming goes all the way back to when I was in 5th grade. I had begun dabbling in the basics of Ruby to make games using a software called "RPG Maker". I worked my way into Python from there, and everything seemed to grow from that. Python, C++, C#, Bash; I found myself stockpiling skills for pretty much nothing but hobbies. Then, near the end of highschool Covid came around and we were all in quarantine. That turned me onto social media which I had never been very active in. It was there I heard that I could create chat bots using Javascript, so I taught myself that and started making bots on Discord, a text based social media platform.</p>
