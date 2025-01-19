@@ -6,13 +6,19 @@ export default function About() {
     return (
         <main>
             <div className='about container'>
-                <img src={aboutImage} alt='Kyle Lucas'></img>
-                <div>
-                    <h2>Kyle Lucas</h2>
-                    <h3>Web Developer</h3>
-                </div>
                 <section>
                     <div>
+                        <img src={aboutImage} alt='Kyle Lucas'></img>
+                        <div className='name'>
+                            <h2>Kyle Lucas</h2>
+                            <h3>Web Developer</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div className='name'>
+                            <h2>Kyle Lucas</h2>
+                            <h3>Web Developer</h3>
+                        </div>
                         <div className='skillChart'>
                             <div>
                                 <div>

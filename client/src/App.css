@@ -299,7 +299,7 @@ a {
   max-width: 40rem;
   /* max-height: 20rem; */
   width: 100%;
-  padding: 10px;
+  padding: 0.33rem;
 }
 
 .container>img+p {
@@ -312,17 +312,75 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
+
+.about>section div:has(img)>*:not(:last-child){
+  margin-bottom: 0.33rem;
+}
+
+.about>section div:has(img)>.name{
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: center;
+}
+.name>*:not(:last-child){
+  margin-right: 0.66rem;
+}
+
+div:has(.skillChart)>.name{
+  display: none;
+}
+
 .about.container section{
   display: flex;
   flex-direction: column;
 }
 .about.container section>div{
-  height: 50%;
-  padding: 0.66rem;
+  /* height: 50%; */
+  padding: 0.33rem;
 }
+
 .about.container section>div:last-child{
   background-color: var(--cardBgColor);
   border-radius: 10px;
+}
+.about.container h3 {
+  color: var(--infoColor);
+}
+.about.container>section img{
+  width: 100%;
+
+  border: 2px solid var(--infoColor);
+  border-radius: 20px;
+}
+
+.about.container>section div:has(img){
+  display: flex;
+  flex-direction: column;
+}
+
+.skillChart {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 0.33rem;
+}
+
+.skillChart>div {
+  width: 100%;
+  /* padding: 0.33rem; */
+}
+
+.skillChart>div>div{
+  padding: 0.33rem 0;
+}
+
+div:has(.skillChart)>.techList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div:has(.skillChart)>.techList>li{
+  margin: 0.1515rem 0;
 }
 
 progress{
@@ -357,20 +415,6 @@ progress[value]::-webkit-progress-value {
 
 progress::-webkit-progress-bar {
   background-color: var(--subBgColor);
-}
-
-.skillChart {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skillChart>div {
-  width: 50%;
-  padding: 0.33rem;
-}
-
-.skillChart>div>div{
-  padding: 0.33rem 0;
 }
 
 .portfolioPage div:has(h3){
@@ -537,9 +581,17 @@ progress::-webkit-progress-bar {
   transition: opacity 500ms;
 }
 
-.card ul.techList {
+ul.techList{
   text-align: center;
   padding: 0;
+}
+
+.about ul.techList{
+  margin: 0;
+  margin-top: 0.33rem;
+}
+
+.card ul.techList {
   filter: opacity(0%);
   transition: all 0.75s;
 }
@@ -548,7 +600,7 @@ progress::-webkit-progress-bar {
   filter: opacity(100%);
 }
 
-.card ul.techList>li {
+ul.techList>li {
   display: inline;
   padding: 0.33rem;
   color: var(--subInfoColor);
@@ -762,6 +814,37 @@ ul.mainTech li:not(:first-child) {
     flex: 1 1 0;
   }
 
+  .about.container section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about>section>div:not(:last-child){
+    width: 50%;
+  }
+  .about>section div:has(img)>*:not(:last-child){
+    margin-bottom: 0;
+    /* margin-right: 0.33rem; */
+  }
+  .about>section div:has(img)>.name{
+    display: none;
+  }
+  
+  div:has(.skillChart)>.name>*:not(:last-child){
+    margin-right: 1rem;
+  }
+  
+  div:has(.skillChart)>.name{
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+
+  .skillChart>div {
+    width: 50%;
+  }
+
   .portfolioPage div>h3{
     min-width: 30%;
   }
@@ -797,6 +880,14 @@ ul.mainTech li:not(:first-child) {
 
   .navbar>.tab {
     width: 12%;
+  }
+  div:has(.skillChart)>.name{
+    flex-direction: column;
+    margin-bottom: 0.33rem;
+  }
+/* div:has(.skillChart)>.name>h2 */
+  h2{
+    font-size: 2rem;
   }
 
   .portfolioPage div>h3{
@@ -853,8 +944,31 @@ ul.mainTech li:not(:first-child) {
 
 @media (min-width: 1440px) {
 
+  .navbar h1{
+    font-size: 3rem;
+  }
+
   h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  h3{
+    font-size: 1.5rem;
+  }
+
+  h4{
+    font-size: 1.25rem;
+  }
+
+  header {
+    height: 75px;
+  }
+  header.navbar>#nameDisplay{
+    height: 75px;
+  }
+  .navbar>.tab {
+    height: 75px;
+    line-height: 75px;
   }
   .container>img {
     max-width: 45rem;
@@ -867,7 +981,20 @@ ul.mainTech li:not(:first-child) {
   }
 
   .navbar>.tab {
-    width: unset;
+    width: 8%;
+    font-size: 1.25rem;
+  }
+
+  .skillChart>div {
+    width: 100%;
+  }
+
+  .skillChart>div>div{
+    padding: 0.66rem 0;
+  }
+
+  .about ul.techList>li{
+    font-size: 1.25rem;
   }
 
   .portfolioPage div>h3{
