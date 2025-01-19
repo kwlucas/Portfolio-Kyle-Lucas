@@ -582,6 +582,34 @@ progress::-webkit-progress-bar {
   transition: opacity 500ms;
 }
 
+.functions{
+  border: 1px solid var(--infoColor);
+  border-radius: 5px;
+  background-color: var(--bgColor);
+}
+
+.functions>h4{
+  width: min-content;
+  padding: 0.45rem;
+  margin-bottom: 0.33rem;
+  font-weight: normal;
+  background-color: var(--darkInfoColor);
+  border-radius: 0 0 15px 0;
+  border-bottom: 1px solid var(--infoColor);
+  border-right: 1px solid var(--infoColor);
+}
+
+.functions>ul{
+  column-count: 1;
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+}
+
+/* .functions>ul>li:not(:last-child){ */
+.functions>ul>li{
+  margin-bottom: 0.33rem;
+}
+
 .techLists>div{
   width: 50%;
   text-align: center;
@@ -794,6 +822,8 @@ ul.mainTech li:not(:first-child) {
   flex: 1 1 0;
 }
 
+.content>section:not(:last-child),
+.content .functions:not(:last-child),
 .content .body:not(:last-child) {
   margin-bottom: 1rem;
 }

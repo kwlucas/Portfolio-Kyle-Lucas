@@ -65,15 +65,14 @@ export default function Project(props) {
                             </div>
                         </div>
                     </section>
-                    {functionality[0] ? 
-                    <div className='functions'>
+                    {functionality[0] ? <div className='functions'>
                         <h4>Functionality</h4>
                         <ul>
                             {functionality.map((item, index) => (
                                 <li key={index}>{item}</li>
                             ))}
                         </ul>
-                    </div> : <></> }
+                    </div> : <></>}
                     {infoSegments[0] || mediaPaths[0] ? <div className='body' >
                         {infoSegments[0] ? <p>{infoSegments[0]}</p> : <></>}
                         {mediaPaths[0] ? <div> <img src={mediaPaths[0]}></img></div> : <></>}
